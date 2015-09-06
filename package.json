@@ -1,0 +1,52 @@
+{
+  "name": "beaumont_flooring-dom",
+  "version": "0.0.1",
+  "description": "beaumont flooring virt dom browser frontend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/beaumont_flooring-dom.git"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "beaumont_flooring-dom",
+    "beaumont_flooring-dom.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0",
+    "zuul": "^3.0.0",
+    "extend": "git://github.com/nathanfaucett/extend.git",
+    "comn": "git://github.com/nathanfaucett/comn",
+    "comn_css": "git://github.com/nathanfaucett/comn_css",
+    "del": "^1.1.1",
+    "ejs": "git://github.com/nathanfaucett/ejs",
+    "extend": "git://github.com/nathanfaucett/extend.git",
+    "file_path": "git://github.com/nathanfaucett/file_path",
+    "file_utils": "git://github.com/nathanfaucett/file_utils",
+    "for_each": "git://github.com/nathanfaucett/for_each.git",
+    "gaze": "^0.5.1",
+    "gulp": "^3.8.11",
+    "gulp-connect": "2.2.0",
+    "gulp-help": "1.3.3",
+    "gulp-jsbeautifier": "0.0.4",
+    "gulp-jshint": "1.9.2",
+    "gulp-jsonminify": "0.0.2",
+    "gulp-minify-css": "0.4.6",
+    "gulp-minify-html": "1.0.0",
+    "gulp-uglify": "1.1.0",
+    "is_object": "git://github.com/nathanfaucett/is_object",
+    "less": "2.4.0",
+    "livereload": "git://github.com/nathanfaucett/livereload",
+    "vinyl-fs": "^1.0.0"
+  },
+  "dependencies": {
+    "virt": "git://github.com/nathanfaucett/virt.git",
+    "virt-dom": "git://github.com/nathanfaucett/virt-dom.git",
+    "environment": "git://github.com/nathanfaucett/environment.git",
+    "event_listener": "git://github.com/nathanfaucett/event_listener.git",
+    "beaumont_flooring": "git://github.com/nathanfaucett/beaumont_flooring.git"
+  }
+}
