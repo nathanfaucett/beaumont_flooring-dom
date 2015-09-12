@@ -5,7 +5,8 @@ module.exports = function(config) {
     return function () {
         return vfs.src([
             config.paths.fonts + "**/*",
-            config.paths.img + "**/*"
+            config.paths.img + "**/*",
+            config.paths.webRoot + "email.php"
         ]).pipe(vfs.dest(config.paths.build));
     };
 };
