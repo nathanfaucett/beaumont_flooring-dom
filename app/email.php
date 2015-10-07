@@ -23,21 +23,21 @@
         $error = True;
     }
 
-    $subject = "Beaumont Flooring Contact Form - From $email - $post_subject";
+    $subject = "Bomont Flooring Contact Form - From $email - $post_subject";
     $body = "<html><body><p>$message</p><p>From $email</p></body></html>";
 
     $to = "nathanfaucett@gmail.com";
 
     $headers = "From: $email \r\n";
     $headers .= "Reply-To: $email \r\n";
-    $headers .= "Signed-by: beaumontflooring.com \r\n";
+    $headers .= "Signed-by: bomontflooring.com \r\n";
     $headers .= "MIME-Version: 1.0 \r\n";
     $headers .= "Content-Type: text/html; charset=utf-8 \r\n";
 
     if( $error == False ){
         mail( $to, $subject, $body, $headers );
-        header("Location: http://beaumontflooring.com/#/contact_us");
+        header("Location: http://bomontflooring.com/#/contact_us");
     } else {
-        header("Location: http://beaumontflooring.com/#/contact_us");
+        header("Location: http://bomontflooring.com/#/contact_us");
     }
 ?>

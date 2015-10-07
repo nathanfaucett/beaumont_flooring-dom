@@ -22,7 +22,6 @@ gulp.task("ejs", "compile ejs into one file", require("./config/tasks/ejs")(conf
 gulp.task("locale", "compiles locale files to build directory", require("./config/tasks/locale")(config));
 
 gulp.task("clean", "clean build files", require("./config/tasks/clean")(config));
-gulp.task("copy", "copy app files to build dir", require("./config/tasks/copy")(config));
 
 gulp.task("copy_resources_img", "copys web app img to app dir", function() {
     return vfs.src([
@@ -35,6 +34,23 @@ gulp.task("copy_resources_fonts", "copys web app fonts to app dir", function() {
     ]).pipe(vfs.dest(config.paths.app + "/fonts"));
 });
 gulp.task("copy_resources", "copys web app fonts to app dir", ["copy_resources_img", "copy_resources_fonts"]);
+
+gulp.task("copy_img", "copys app img to build dir", function() {
+    return vfs.src([
+        config.paths.img + "/**/*"
+    ]).pipe(vfs.dest(config.paths.build + "/img"));
+});
+gulp.task("copy_fonts", "copys app fonts to build dir", function() {
+    return vfs.src([
+        config.paths.fonts + "/**/*"
+    ]).pipe(vfs.dest(config.paths.build + "/fonts"));
+});
+gulp.task("copy_email", "copys email.php to build dir", function() {
+    return vfs.src([
+        config.paths.app + "/email.php"
+    ]).pipe(vfs.dest(config.paths.build));
+});
+gulp.task("copy", "copys app fonts to build dir", ["copy_img", "copy_fonts", "copy_email"]);
 
 gulp.task("serve", "serve build directory", require("./config/tasks/serve")(config));
 

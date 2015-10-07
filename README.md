@@ -1,4 +1,4 @@
-beaumont flooring dom
+bomont flooring dom
 =======
 
-beaumont flooring virt dom browser frontend
+bomont flooring virt dom browser frontend

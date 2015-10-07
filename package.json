@@ -1,23 +1,20 @@
 {
-  "name": "beaumont_flooring-dom",
+  "name": "bomont_flooring-dom",
   "version": "0.0.1",
-  "description": "beaumont flooring virt dom browser frontend",
+  "description": "bomont flooring virt dom browser frontend",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanfaucett/beaumont_flooring-dom.git"
+    "url": "https://github.com/nathanfaucett/bomont_flooring-dom.git"
   },
   "main": "src/index.js",
   "keywords": [
-    "beaumont_flooring-dom",
-    "beaumont_flooring-dom.js"
+    "bomont_flooring-dom",
+    "bomont_flooring-dom.js"
   ],
   "author": "Nathan Faucett",
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tap-spec": "^4.0.0",
-    "tape": "^4.0.0",
-    "zuul": "^3.0.0",
     "extend": "git://github.com/nathanfaucett/extend.git",
     "comn": "git://github.com/nathanfaucett/comn",
     "comn_css": "git://github.com/nathanfaucett/comn_css",
@@ -47,6 +44,6 @@
     "virt-dom": "git://github.com/nathanfaucett/virt-dom.git",
     "environment": "git://github.com/nathanfaucett/environment.git",
     "event_listener": "git://github.com/nathanfaucett/event_listener.git",
-    "beaumont_flooring": "git://github.com/nathanfaucett/beaumont_flooring.git"
+    "bomont_flooring": "git://github.com/nathanfaucett/bomont_flooring.git"
   }
 }

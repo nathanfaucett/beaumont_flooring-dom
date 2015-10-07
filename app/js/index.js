@@ -2,7 +2,7 @@ var virt = require("virt"),
     virtDOM = require("virt-dom"),
     environment = require("environment"),
     eventListener = require("event_listener"),
-    app = require("beaumont_flooring"),
+    app = require("bomont_flooring"),
     config = require("./config");
 
 
