@@ -5,23 +5,26 @@ var config = require("../application"),
     fileUtils = require("file_utils");
 
 
-function compile(options, done) {
-    var str;
+function compile(options, callback) {
+    var out, error;
 
-    try{
-        str = comnCss(options.index, options);
+    try {
+        out = comnCss(options.index, options);
     } catch(e) {
-        done(e);
-        return;
+        error = e;
     }
 
-    less.render(str, options.less, function(err, out) {
-        if (err) {
-            done(err);
-        } else {
-            fileUtils.writeFile(options.out, out.css, done);
-        }
-    });
+    if (error) {
+        callback(error);
+    } else {
+        less.render(out, options.less, function(error, lessOut) {
+            if (error) {
+                callback(error);
+            } else {
+                fileUtils.writeFile(options.out, lessOut.css, callback);
+            }
+        });
+    }
 }
 
 module.exports = function(config) {

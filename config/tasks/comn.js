@@ -4,11 +4,18 @@ var comn = require("comn"),
 
 
 function compile(options, callback) {
-    try{
-        fileUtils.writeFileSync(options.out, comn(options.index, options));
-        callback();
+    var out, error;
+
+    try {
+        out = comn(options.index, options);
     } catch(e) {
-        callback(e);
+        error = e;
+    }
+
+    if (error) {
+        callback(error);
+    } else {
+        fileUtils.writeFile(options.out, out, callback);
     }
 }
 

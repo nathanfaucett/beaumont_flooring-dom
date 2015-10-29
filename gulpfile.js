@@ -69,7 +69,11 @@ if (config.env !== "production") {
 }
 
 gulp.task("build", "build app in current env", buildTasks, function(done) {
-    gulp.start("minify", done);
+    if (config.env !== "production") {
+        done();
+    } else {
+        gulp.start("minify", done);
+    }
 });
 
 function reload() {
