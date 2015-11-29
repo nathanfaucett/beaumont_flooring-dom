@@ -1,10 +1,2 @@
 node_modules
 npm-debug.log
-build
-app/index.css
-app/index.html
-app/index.js
-app/locale
-app/fonts
-app/img
-app/js/config.js

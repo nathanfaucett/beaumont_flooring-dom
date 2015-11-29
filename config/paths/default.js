@@ -2,7 +2,7 @@ var path = require("file_path");
 
 
 var root = path.dir(path.dir(__dirname)),
-    webRoot = path.join(root, "node_modules", "bomont_flooring");
+    webRoot = path.dirname(require.resolve("bomont_flooring/package.json"));
 
 
 module.exports = {
