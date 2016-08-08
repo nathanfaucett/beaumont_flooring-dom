@@ -1,17 +1,17 @@
 var fs = require("fs"),
-    path = require("file_path"),
-    isObject = require("is_object"),
-    extend = require("extend"),
-    forEach = require("for_each"),
-    fileUtils = require("file_utils");
+    path = require("@nathanfaucett/file_path"),
+    isObject = require("@nathanfaucett/is_object"),
+    extend = require("@nathanfaucett/extend"),
+    objectForEach = require("@nathanfaucett/object-for_each"),
+    fileUtils = require("@nathanfaucett/file_utils");
 
 
 function flatten(obj) {
     var out = {};
 
-    forEach(obj, function(value, key) {
+    objectForEach(obj, function(value, key) {
         if (isObject(value)) {
-            forEach(flatten(value), function(v, k) {
+            objectForEach(flatten(value), function(v, k) {
                 out[key + "." + k] = v;
             });
         } else {
@@ -38,7 +38,7 @@ module.exports = function(config) {
             }
         }
 
-        forEach(locales, function(locale) {
+        objectForEach(locales, function(locale) {
             var localeObject = {};
 
             fileUtils.dive(path.join(config.paths.locale, locale), function(stat, next) {

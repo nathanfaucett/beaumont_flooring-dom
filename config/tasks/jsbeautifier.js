@@ -1,5 +1,5 @@
 var vfs = require("vinyl-fs"),
-    jsbeautifier = require("gulp-jsbeautifier");
+    jsbeautifier = require("gulp-jsbeautifier");;
 
 
 module.exports = function(config) {

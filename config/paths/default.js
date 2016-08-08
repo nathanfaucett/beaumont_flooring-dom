@@ -1,4 +1,4 @@
-var path = require("file_path");
+var path = require("@nathanfaucett/file_path");
 
 
 var root = path.dir(path.dir(__dirname)),

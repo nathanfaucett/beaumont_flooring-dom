@@ -1,8 +1,8 @@
-var ejs = require("ejs"),
-    extend = require("extend"),
-    forEach = require("for_each"),
-    path = require("file_path"),
-    fileUtils = require("file_utils");
+var ejs = require("@nathanfaucett/ejs"),
+    extend = require("@nathanfaucett/extend"),
+    arrayForEach = require("@nathanfaucett/array-for_each"),
+    path = require("@nathanfaucett/file_path"),
+    fileUtils = require("@nathanfaucett/file_utils");
 
 
 function compile(template, out, config, options, callback) {
@@ -15,7 +15,7 @@ function compile(template, out, config, options, callback) {
         settings: options.settings
     };
 
-    forEach(options.functions, function(fn) {
+    arrayForEach(options.functions, function(fn) {
         extend(options.data, fn());
     });
 

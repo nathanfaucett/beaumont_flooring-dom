@@ -1,4 +1,4 @@
-var fileUtils = require("file_utils");
+var fileUtils = require("@nathanfaucett/file_utils");
 
 
 module.exports = function(config) {

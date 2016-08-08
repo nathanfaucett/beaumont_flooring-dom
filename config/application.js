@@ -1,4 +1,4 @@
-var extend = require("extend"),
+var extend = require("@nathanfaucett/extend"),
     utils = require("./utils");
 
 

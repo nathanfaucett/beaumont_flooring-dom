@@ -1,8 +1,8 @@
 var config = require("../application"),
-    comnCss = require("comn_css"),
-    path = require("file_path"),
+    comnCss = require("@nathanfaucett/comn_css"),
+    path = require("@nathanfaucett/file_path"),
     less = require("less"),
-    fileUtils = require("file_utils");
+    fileUtils = require("@nathanfaucett/file_utils");
 
 
 function compile(options, callback) {

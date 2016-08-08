@@ -1,5 +1,5 @@
 var vfs = require("vinyl-fs"),
-    minifyJSON = require("gulp-jsonminify");
+    minifyJSON = require("gulp-jsonminify");;
 
 
 module.exports = function(config) {

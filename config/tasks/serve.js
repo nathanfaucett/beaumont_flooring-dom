@@ -1,5 +1,5 @@
 var connect = require("gulp-connect"),
-    livereload = require("livereload");
+    livereload = require("@nathanfaucett/livereload");
 
 
 module.exports = function(config) {

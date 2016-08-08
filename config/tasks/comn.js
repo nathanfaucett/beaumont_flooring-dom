@@ -1,6 +1,6 @@
-var comn = require("comn"),
-    path = require("file_path"),
-    fileUtils = require("file_utils");
+var comn = require("@nathanfaucett/comn"),
+    path = require("@nathanfaucett/file_path"),
+    fileUtils = require("@nathanfaucett/file_utils");
 
 
 function compile(options, callback) {

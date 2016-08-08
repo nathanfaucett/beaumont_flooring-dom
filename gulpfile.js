@@ -1,7 +1,7 @@
 var gulp = require("gulp-help")(require("gulp")),
     vfs = require("vinyl-fs"),
     gaze = require("gaze"),
-    livereload = require("livereload"),
+    livereload = require("@nathanfaucett/livereload"),
     config = require("./config/application");
 
 

@@ -1,5 +1,5 @@
 var vfs = require("vinyl-fs"),
-    filePath = require("file_path"),
+    filePath = require("@nathanfaucett/file_path"),
     minifyHTML = require("gulp-minify-html");
 
 

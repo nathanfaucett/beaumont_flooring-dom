@@ -1,5 +1,5 @@
 var defaults = require("./default"),
-    path = require("file_path");
+    path = require("@nathanfaucett/file_path");
 
 
 module.exports = {
